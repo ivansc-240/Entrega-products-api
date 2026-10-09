@@ -1,0 +1,8 @@
+$kind: http-request
+description: ""
+url: "{{url}}/change-price/1"
+method: PATCH
+body:
+  type: json
+  content: "{\r\n  \"price\": -5\r\n}"
+order: 11000

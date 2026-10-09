@@ -1,0 +1,7 @@
+$kind: http-request
+description: ""
+url: "{{url}}/getAll?active=TRUE"
+method: GET
+queryParams:
+  active: "TRUE"
+order: 8000

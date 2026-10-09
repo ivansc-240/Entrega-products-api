@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: "{{url}}/getById/3"
+method: GET
+order: 10000

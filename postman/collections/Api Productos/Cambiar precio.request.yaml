@@ -1,0 +1,8 @@
+$kind: http-request
+description: "Modifica exclusivamente el precio. Cuerpo JSON con solamente: price (número mayor que 0, máximo 2 decimales). Responde 200, 400 si es inválido o 404 si no existe."
+url: "{{url}}/change-price/2"
+method: PATCH
+body:
+  type: json
+  content: "{\r\n  \"price\": 349.99\r\n}"
+order: 6000

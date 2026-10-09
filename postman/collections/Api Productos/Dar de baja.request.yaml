@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: "{{url}}/delete/2"
+method: DELETE
+order: 7000

@@ -1,0 +1,24 @@
+$kind: collection
+description: |-
+  **Colección para las pruebas de la API REST de Productos.**  
+  Cubre el ciclo de vida completo del producto, incluyendo: creación de productos, recuperación de todos los productos activos o un producto específico por ID, ejecución de actualizaciones totales, modificación de precios y desactivación de productos.  
+  Además, incluye solicitudes de casos negativos para validar el manejo de errores, tales como consultar un ID inexistente o enviar datos inválidos (por ejemplo, un precio negativo).
+
+  ## Solicitudes
+
+  | Solicitud/Request | Método | Ruta/Endpoint |
+  | --- | --- | --- |
+  | Crear producto | POST | /create |
+  | Obtener Todos | GET | /getAll |
+  | Consulta por ID | GET | /getById/:id |
+  | Actualización completa | PUT | /update/:id |
+  | Cambiar precio | PATCH | /change-price/:id |
+  | Dar de baja | DELETE | /delete/:id |
+  | Comprobar por get all | GET | /getAll |
+  | Comprobar por ID | GET | /getById/:id |
+  | ID inexistente | GET | /getById/:id |
+  | Datos inválidos | PATCH | /change-price/:id |
+
+  ## Variable
+
+  - `url` — URL Base de la API (ej. `http://localhost:3000`)

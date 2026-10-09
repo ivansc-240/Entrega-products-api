@@ -1,0 +1,22 @@
+$kind: http-request
+description: "Crea un producto nuevo. Cuerpo JSON: name (texto, obligatorio), price (número mayor que 0, máximo 2 decimales, obligatorio), stock (entero >= 0, obligatorio), description (texto, obligatorio), brand (texto, opcional), img (texto, opcional). Responde 201."
+url: "{{url}}/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Mouse\",\r
+
+    \  \"price\": 299.5,\r
+
+    \  \"stock\": 20,\r
+
+    \  \"description\": \"Mouse inalámbrico\",\r
+
+    \  \"brand\": \"Logi\",\r
+
+    \  \"img\": \"mouse.jpg\"\r
+
+    }"
+order: 4000
